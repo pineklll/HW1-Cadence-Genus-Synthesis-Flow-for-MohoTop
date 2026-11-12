@@ -1,0 +1,30 @@
+# ---------------------------------------------------------------- #
+# Build and tool output
+
+build/
+
+# ---------------------------------------------------------------- #
+# Technology library
+
+# Shared, read-only process library linked by `make init`
+tech
+/tech
+
+# ---------------------------------------------------------------- #
+# Tool artifacts
+
+*.log
+*.cmd
+*.db
+*.svf
+*.sdf
+*.twf
+*.spef
+
+# ---------------------------------------------------------------- #
+# Editor and OS files
+
+*.swp
+*.swo
+*~
+.DS_Store
