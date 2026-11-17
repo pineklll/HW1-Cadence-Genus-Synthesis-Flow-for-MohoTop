@@ -1,0 +1,71 @@
+
+
+Working Directory = /home/centos/Documents/HW1-Cadence-Genus-Synthesis-Flow-for-MohoTop/build/genus
+QoS Summary for MohoTop
+==========================================================================================
+Metric                          syn_generic     syn_map         syn_opt         *genus         
+==========================================================================================
+
+View : view_ss_ccw
+Slack (ns):                     0.036           0.001           0.000           0.250
+  R2R (ns):                     0.036           0.001           0.000           0.250
+  I2R (ns):                     3.239           3.498           3.748           3.998
+  R2O (ns):                     0.994           0.881           1.131           1.381
+  I2O (ns):                  no_value        no_value        no_value        no_value
+  CG  (ns):                  no_value        no_value        no_value        no_value
+TNS (ns):                       0.000           0.000           0.000           0.000
+  R2R (ns):                     0.000           0.000           0.000           0.000
+  I2R (ns):                     0.000           0.000           0.000           0.000
+  R2O (ns):                     0.000           0.000           0.000           0.000
+  I2O (ns):                  no_value        no_value        no_value        no_value
+  CG  (ns):                  no_value        no_value        no_value        no_value
+Failing Paths:                      0               0               0               0
+
+View : view_ff_ccb
+Slack (ns):                     1.249           1.387           1.637           1.887
+  R2R (ns):                     3.269           3.585           3.746           3.996
+  I2R (ns):                     3.347           3.607           3.857           4.107
+  R2O (ns):                     1.249           1.387           1.637           1.887
+  I2O (ns):                  no_value        no_value        no_value        no_value
+  CG  (ns):                  no_value        no_value        no_value        no_value
+TNS (ns):                       0.000           0.000           0.000           0.000
+  R2R (ns):                     0.000           0.000           0.000           0.000
+  I2R (ns):                     0.000           0.000           0.000           0.000
+  R2O (ns):                     0.000           0.000           0.000           0.000
+  I2O (ns):                  no_value        no_value        no_value        no_value
+  CG  (ns):                  no_value        no_value        no_value        no_value
+Failing Paths:                      0               0               0               0
+
+Cell Area:                    108,090         152,781         151,034         151,034
+Total Cell Area:              108,090         152,781         151,034         151,034
+Leaf Instances:                17,288          10,640          10,290          10,290
+Total Instances:               17,288          10,640          10,290          10,290
+Utilization (%):                 0.00            0.00            0.00            0.00
+Tot. Net Length (um):        no_value        no_value        no_value        no_value
+Avg. Net Length (um):        no_value        no_value        no_value        no_value
+Route Overflow H (%):        no_value        no_value        no_value        no_value
+Route Overflow V (%):        no_value        no_value        no_value        no_value
+MBCI(%) (bits/gate) :            0.00            0.00            0.00            0.00
+Norm Cong Hotspot Area:
+  Max Cong:                  no_value        no_value        no_value        no_value
+  Tot Cong:                  no_value        no_value        no_value        no_value
+==========================================================================================
+CPU  Runtime (h:m:s):        00:06:25        00:08:05        00:03:45        00:02:30
+Real Runtime (h:m:s):        00:04:21        00:05:10        00:01:45        00:00:51
+CPU  Elapsed (h:m:s):        00:06:33        00:08:12        00:03:53        00:02:37
+Real Elapsed (h:m:s):        00:04:22        00:09:33        00:11:19        00:12:11
+Memory (MB):                  3323.00         2867.89         2885.31         2872.34
+==========================================================================================
+==========================================================================================
+Flow Settings:
+==========================================================================================
+Total Runtime (h:m:s): 00:01:30
+Total Memory (MB):     2880.35
+Executable Version:    25.10-p002_1
+==========================================================================================
+Total Cell Area =  Cell Area + Physical Cell Area
+Total Instances =  Leaf Instances + Physical Instances
+
+
+ * :session is restored from db. The genus elapsed runtime also includes db loading runtime
+
