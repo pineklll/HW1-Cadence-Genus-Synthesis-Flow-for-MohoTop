@@ -228,7 +228,17 @@ Normal exit.
 
 \section{Version Control Workflow}
 
-Git was used to manage the flow. The recorded commits are:
+Git was used to manage the flow: the scaffold, Makefile and Genus targets,
+configuration fixes, the five stage scripts, and the report were committed as
+the work progressed. The complete project, including the RTL, Tcl scripts,
+synthesized netlist and reports, and this report, is publicly available on
+GitHub:
+
+\begin{center}
+\url{https://github.com/pineklll/HW1-Cadence-Genus-Synthesis-Flow-for-MohoTop}
+\end{center}
+
+The recorded commits are:
 
 {\footnotesize
 \begin{verbatim}
@@ -239,12 +249,15 @@ d224fe0  2026-11-17  Add tool-genus.mk
 2723081  2026-11-17  Include tool-genus.mk in Makefile
 181d25a  2026-11-17  Fix Makefile line 38 syntax error
 7001be5  2026-11-17  Complete Tcl scripts; update tech/design config
-b3e279c  2026-11-17  Fix tech.tcl and implement 01_elaborate.tcl
+b3e279c  2026-11-17  Finish tech.tcl and 01_elaborate.tcl
+de59744  2026-11-17  Finish remaining stages and report
+11e138c  2026-11-17  Add student ID, LaTeX ignores, clean root
+fbee29c  2026-11-17  Include report PDF in deliverables screenshot
 \end{verbatim}
 }
 
-The completed stage scripts, README, and this report are the current working-tree
-snapshot.
+The commit history above records the development of the flow; the final
+deliverables are tracked in the same repository.
 
 \section{Conclusion}
 

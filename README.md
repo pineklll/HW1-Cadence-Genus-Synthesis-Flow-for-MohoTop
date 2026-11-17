@@ -129,8 +129,11 @@ and terminal-transcript figures are in [`report/`](report/).
 
 ## Version control
 
-Git tracked the flow scaffold, Makefile/Genus targets, and configuration fixes.
-The recorded commits are:
+The complete project is publicly available on GitHub:
+<https://github.com/pineklll/HW1-Cadence-Genus-Synthesis-Flow-for-MohoTop>
+
+Git tracked the flow scaffold, Makefile/Genus targets, configuration fixes, the
+stage scripts, and the report. The recorded commits are:
 
 ```text
 cd5b22b  2026-11-12  Initial commit
@@ -140,7 +143,10 @@ d224fe0  2026-11-17  Add tool-genus.mk
 2723081  2026-11-17  Include tool-genus.mk in Makefile
 181d25a  2026-11-17  Fix Makefile line 38 syntax error
 7001be5  2026-11-17  Complete Tcl scripts; update tech/design config
-b3e279c  2026-11-17  Fix tech.tcl and implement 01_elaborate.tcl
+b3e279c  2026-11-17  Finish tech.tcl and 01_elaborate.tcl
+de59744  2026-11-17  Finish remaining stages and report
+11e138c  2026-11-17  Add student ID, LaTeX ignores, clean root
+fbee29c  2026-11-17  Include report PDF in deliverables screenshot
 ```
 
 ## License
