@@ -57,9 +57,8 @@ set N_MAP(SYNOP)          icc2gds
 set LEF_TECH              [file join ${LEF_DIR} tech ${N_TECH(NAME)}.lef]
 set LEF_STD_RVT           [file join ${LEF_DIR} std ${N_STD(RVT)}.lef]
 set LEF_STD_LVT           [file join ${LEF_DIR} std ${N_STD(LVT)}.lef]
-set LEF_MEM_M1024         [file join ${LEF_DIR} mem ${N_MEM(M1024)}.plef]
-set LEF_MEM_M0256         [file join ${LEF_DIR} mem ${N_MEM(M0256)}.plef]
-set LEF_LIST              [list ${LEF_TECH} ${LEF_STD_RVT} ${LEF_STD_LVT} ${LEF_MEM_M1024} ${LEF_MEM_M0256}]
+set LEF_MEM_M2048         [file join ${LEF_DIR} mem ${N_MEM(M2048)}.plef]
+set LEF_LIST              [list ${LEF_TECH} ${LEF_STD_RVT} ${LEF_STD_LVT} ${LEF_MEM_M2048}]
 
 # Files of tf
 set TF_TECH               [file join ${TF_DIR} ${N_TECH(NAME)}.tf]
@@ -70,12 +69,10 @@ set LIB_STD_RVT_FF        [file join ${LIB_DIR} std ${N_STD(RVT)}_${N_STD(FF)}.l
 set LIB_STD_RVT_SS        [file join ${LIB_DIR} std ${N_STD(RVT)}_${N_STD(SS)}.lib]
 set LIB_STD_LVT_FF        [file join ${LIB_DIR} std ${N_STD(LVT)}_${N_STD(FF)}.lib]
 set LIB_STD_LVT_SS        [file join ${LIB_DIR} std ${N_STD(LVT)}_${N_STD(SS)}.lib]
-set LIB_MEM_M1024_FF      [file join ${LIB_DIR} mem ${N_MEM(M1024)}_${N_MEM(FF)}.lib]
-set LIB_MEM_M1024_SS      [file join ${LIB_DIR} mem ${N_MEM(M1024)}_${N_MEM(SS)}.lib]
-set LIB_MEM_M0256_FF      [file join ${LIB_DIR} mem ${N_MEM(M0256)}_${N_MEM(FF)}.lib]
-set LIB_MEM_M0256_SS      [file join ${LIB_DIR} mem ${N_MEM(M0256)}_${N_MEM(SS)}.lib]
-set LIB_LIST_FF           [list ${LIB_STD_RVT_FF} ${LIB_STD_LVT_FF} ${LIB_MEM_M1024_FF} ${LIB_MEM_M0256_FF}]
-set LIB_LIST_SS           [list ${LIB_STD_RVT_SS} ${LIB_STD_LVT_SS} ${LIB_MEM_M1024_SS} ${LIB_MEM_M0256_SS}]
+set LIB_MEM_M2048_FF      [file join ${LIB_DIR} mem ${N_MEM(M2048)}_${N_MEM(FF)}.lib]
+set LIB_MEM_M2048_SS      [file join ${LIB_DIR} mem ${N_MEM(M2048)}_${N_MEM(SS)}.lib]
+set LIB_LIST_FF           [list ${LIB_STD_RVT_FF} ${LIB_STD_LVT_FF} ${LIB_MEM_M2048_FF}]
+set LIB_LIST_SS           [list ${LIB_STD_RVT_SS} ${LIB_STD_LVT_SS} ${LIB_MEM_M2048_SS}]
 set LIB_LIST              [concat ${LIB_LIST_FF} ${LIB_LIST_SS}]
 
 # Files of db
@@ -83,12 +80,10 @@ set DB_STD_RVT_FF         [file join ${DB_DIR} std ${N_STD(RVT)}_${N_STD(FF)}.db
 set DB_STD_RVT_SS         [file join ${DB_DIR} std ${N_STD(RVT)}_${N_STD(SS)}.db]
 set DB_STD_LVT_FF         [file join ${DB_DIR} std ${N_STD(LVT)}_${N_STD(FF)}.db]
 set DB_STD_LVT_SS         [file join ${DB_DIR} std ${N_STD(LVT)}_${N_STD(SS)}.db]
-set DB_MEM_M1024_FF       [file join ${DB_DIR} mem ${N_MEM(M1024)}_${N_MEM(FF)}.db]
-set DB_MEM_M1024_SS       [file join ${DB_DIR} mem ${N_MEM(M1024)}_${N_MEM(SS)}.db]
-set DB_MEM_M0256_FF       [file join ${DB_DIR} mem ${N_MEM(M0256)}_${N_MEM(FF)}.db]
-set DB_MEM_M0256_SS       [file join ${DB_DIR} mem ${N_MEM(M0256)}_${N_MEM(SS)}.db]
-set DB_LIST_FF            [list ${DB_STD_RVT_FF} ${DB_STD_LVT_FF} ${DB_MEM_M1024_FF} ${DB_MEM_M0256_FF}]
-set DB_LIST_SS            [list ${DB_STD_RVT_SS} ${DB_STD_LVT_SS} ${DB_MEM_M1024_SS} ${DB_MEM_M0256_SS}]
+set DB_MEM_M2048_FF       [file join ${DB_DIR} mem ${N_MEM(M2048)}_${N_MEM(FF)}.db]
+set DB_MEM_M2048_SS       [file join ${DB_DIR} mem ${N_MEM(M2048)}_${N_MEM(SS)}.db]
+set DB_LIST_FF            [list ${DB_STD_RVT_FF} ${DB_STD_LVT_FF} ${DB_MEM_M2048_FF}]
+set DB_LIST_SS            [list ${DB_STD_RVT_SS} ${DB_STD_LVT_SS} ${DB_MEM_M2048_SS}]
 set DB_LIST               [concat ${DB_LIST_FF} ${DB_LIST_SS}]
 
 # Files of qrc
@@ -99,9 +94,8 @@ set QRC_LIST              [list ${QRC_CCB} ${QRC_CCW}]
 # Files of gds
 set GDS_STD_RVT           [file join ${GDS_DIR} std ${N_STD(RVT)}.gds]
 set GDS_STD_LVT           [file join ${GDS_DIR} std ${N_STD(LVT)}.gds]
-set GDS_MEM_M1024         [file join ${GDS_DIR} mem ${N_MEM(M1024)}.gds]
-set GDS_MEM_M0256         [file join ${GDS_DIR} mem ${N_MEM(M0256)}.gds]
-set GDS_LIST              [list ${GDS_STD_RVT} ${GDS_STD_LVT} ${GDS_MEM_M1024} ${GDS_MEM_M0256}]
+set GDS_MEM_M2048         [file join ${GDS_DIR} mem ${N_MEM(M2048)}.gds]
+set GDS_LIST              [list ${GDS_STD_RVT} ${GDS_STD_LVT} ${GDS_MEM_M2048}]
 
 # Files of map
 set MAP_FILE_CADEN        [file join ${MAP_DIR} ${N_MAP(CADEN)}.map]
@@ -110,5 +104,4 @@ set MAP_FILE_SYNOP        [file join ${MAP_DIR} ${N_MAP(SYNOP)}.map]
 # Files of ndm
 set NDM_STD_RVT           [file join ${NDM_DIR} std ${N_STD(RVT)}.ndm]
 set NDM_STD_LVT           [file join ${NDM_DIR} std ${N_STD(LVT)}.ndm]
-set NDM_MEM_M1024         [file join ${NDM_DIR} mem ${N_MEM(M1024)}.ndm]
-set NDM_MEM_M0256         [file join ${NDM_DIR} mem ${N_MEM(M0256)}.ndm]
+set NDM_MEM_M2048         [file join ${NDM_DIR} mem ${N_MEM(M2048)}.ndm]
