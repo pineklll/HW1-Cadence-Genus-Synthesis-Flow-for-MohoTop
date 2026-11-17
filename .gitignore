@@ -22,6 +22,33 @@ tech
 *.spef
 
 # ---------------------------------------------------------------- #
+# LaTeX build byproducts
+# (report.pdf is a deliverable and is intentionally not ignored)
+
+*.aux
+*.fls
+*.fdb_latexmk
+*.out
+*.toc
+*.lof
+*.lot
+*.loa
+*.nav
+*.snm
+*.vrb
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.xdv
+*.synctex.gz
+*.synctex(busy)
+*.bcf
+*.run.xml
+
+# ---------------------------------------------------------------- #
 # Editor and OS files
 
 *.swp
