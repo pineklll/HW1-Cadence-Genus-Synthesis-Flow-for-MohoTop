@@ -34,3 +34,6 @@ clean:
 # Build mkdir
 ${BUILD_DIR}:
 	mkdir -p $@
+
+% Include flow makefiles
+include tool-genus.mk
