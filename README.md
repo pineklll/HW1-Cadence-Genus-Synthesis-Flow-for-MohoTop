@@ -103,6 +103,28 @@ reports/
 └── *.rpt
 ```
 
+## HW2: DC + Formality
+
+```sh
+make dc-elaborate
+make dc-compile
+make dc-final      # exports dc/ deliverables
+make formal        # runs Formality; writes formal/ reports
+```
+
+HW2 submission layout:
+
+```
+dc/       MohoTop_syn.v, MohoTop_syn.sdc, MohoTop_syn.sdf,
+          report_qor.rpt, report_timing.rpt, report_area.rpt
+formal/   report_guidance.rpt, report_failing_points.rpt,
+          report_unmatched_points.rpt, report_black_boxes.rpt
+```
+
+The HW2 report source and PDF are in `hw2_report/`. Formality reads the original
+RTL as the reference, the final DC netlist as the implementation, and the SVF
+files from the DC elaborate and compile stages.
+
 ## Configuration
 
 All settings live in Tcl files under `script/`; stage scripts reference variables
@@ -122,10 +144,13 @@ The memory macro is `mem_hl55_2048x32_sp_m1`, available in
 `dont_use : true`; this is normal and does not prevent the RTL instances from
 being preserved in the netlist.
 
-## Report
+## Reports
 
-The homework report is at [`report/report.pdf`](report/report.pdf). LaTeX source
-and terminal-transcript figures are in [`report/`](report/).
+The HW1 report is at [`report/report.pdf`](report/report.pdf). LaTeX source and
+terminal-transcript figures are in [`report/`](report/).
+
+The HW2 report is at [`hw2_report/report.pdf`](hw2_report/report.pdf), with its
+source and figures in [`hw2_report/`](hw2_report/).
 
 ## Version control
 

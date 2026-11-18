@@ -1,0 +1,85 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'MohoTop' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : qor
+Design : MohoTop
+Version: R-2020.09-SP5
+Date   : Wed Nov 18 15:20:57 2026
+****************************************
+
+
+  Timing Path Group 'main_clk'
+  -----------------------------------
+  Levels of Logic:              52.00
+  Critical Path Length:          5.16
+  Critical Path Slack:           1.00
+  Critical Path Clk Period:      6.67
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.02
+  Total Hold Violation:         -0.20
+  No. of Hold Violations:       25.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          2
+  Hierarchical Port Count:        282
+  Leaf Cell Count:              12257
+  Buf/Inv Cell Count:            1380
+  Buf Cell Count:                  99
+  Inv Cell Count:                1281
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      9896
+  Sequential Cell Count:         2361
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    21487.751896
+  Noncombinational Area: 18646.523666
+  Buf/Inv Area:           1389.491991
+  Total Buffer Area:           154.91
+  Total Inverter Area:        1234.58
+  Macro/Black Box Area: 108090.226562
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:            148224.502125
+  Design Area:          148224.502125
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         12500
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: 2026-vlsi-fn156
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    4.41
+  Logic Optimization:                313.56
+  Mapping Optimization:              137.92
+  -----------------------------------------
+  Overall Compile Time:              554.21
+  Overall Compile Wall Clock Time:   182.24
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.02  TNS: 0.20  Number of Violating Paths: 25
+
+  --------------------------------------------------------------------
+
+
+1

@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : MohoTop
+Version: R-2020.09-SP5
+Date   : Wed Nov 18 15:20:57 2026
+****************************************
+
+Library(s) Used:
+
+    M31GPSC900HL055PR_125CSS1P08_cworst_ccs (File: /home/centos/Documents/HW1-Cadence-Genus-Synthesis-Flow-for-MohoTop/tech/db/std/M31GPSC900HL055PR_125CSS1P08_cworst_ccs.db)
+    M31GPSC900HL055PL_125CSS1P08_cworst_ccs (File: /home/centos/Documents/HW1-Cadence-Genus-Synthesis-Flow-for-MohoTop/tech/db/std/M31GPSC900HL055PL_125CSS1P08_cworst_ccs.db)
+    mem_hl55_2048x32_sp_m1_lib (File: /home/centos/Documents/HW1-Cadence-Genus-Synthesis-Flow-for-MohoTop/tech/db/mem/mem_hl55_2048x32_sp_m1_ss1p08v125c.db)
+
+Number of ports:                          395
+Number of nets:                         12779
+Number of cells:                        12260
+Number of combinational cells:           9896
+Number of sequential cells:              2359
+Number of macros/black boxes:               2
+Number of buf/inv:                       1380
+Number of references:                      83
+
+Combinational area:              21487.751896
+Buf/Inv area:                     1389.491991
+Noncombinational area:           18646.523666
+Macro/Black Box area:           108090.226562
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                148224.502125
+Total area:                 undefined
+1

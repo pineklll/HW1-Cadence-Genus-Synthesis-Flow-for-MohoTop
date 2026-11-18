@@ -1,0 +1,48 @@
+**************************************************
+Report         : guidance
+
+Reference      : r:/WORK/MohoTop
+Implementation : i:/WORK/MohoTop
+Version        : S-2021.06
+Date           : Wed Nov 18 15:21:33 2026
+**************************************************
+
+***************************** Guidance Summary *****************************
+                                         Status
+Command                 Accepted   Rejected  Unsupported  Unprocessed  Total
+----------------------------------------------------------------------------
+architecture_netlist:          2          0          0          0          2
+boundary            :          2          0          0          0          2
+boundary_netlist    :          2          0          0          0          2
+change_names        :         57          0          0          0         57
+constant            :        184          0          0          0        184
+datapath            :          2          0          0          0          2
+environment         :          4          0          0          0          4
+instance_map        :         31          0          0          0         31
+mark                :         38          0          0          0         38
+merge               :          3          0          0          0          3
+reg_constant        :         42          0          0          0         42
+reg_merging         :          7          0          0          0          7
+replace             :         12          0          0          0         12
+ungroup             :         32          0          0          0         32
+uniquify            :          2          0          0          0          2
+ununiquify          :          1          0          0          0          1
+----------------------------------------------------------------------------
+Total               :        421          0          0          0        421
+
+
+Note: No guide_hier_map commands were found in the SVF. It is
+      important to enable guide_hier_map generation in
+      Design Compiler to avoid SVF rejections that can cause
+      aborted/failing points or long run times during verification.
+      In Design Compiler the recommended methodology uses variable
+      hdlin_enable_hier_map and command set_verification_top.
+
+SVF files read:
+      /home/centos/Documents/HW1-Cadence-Genus-Synthesis-Flow-for-MohoTop/build/dc/01_elaborate/MohoTop.svf
+      /home/centos/Documents/HW1-Cadence-Genus-Synthesis-Flow-for-MohoTop/build/dc/02_compile/MohoTop.svf
+
+SVF files produced:
+  /home/centos/Documents/HW1-Cadence-Genus-Synthesis-Flow-for-MohoTop/build/formal/formality_svf/
+    svf.txt
+1

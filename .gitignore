@@ -18,6 +18,8 @@ tech
 *.db
 *.svf
 *.sdf
+# Keep the HW2 DC SDF deliverable
+!dc/MohoTop_syn.sdf
 *.twf
 *.spef
 

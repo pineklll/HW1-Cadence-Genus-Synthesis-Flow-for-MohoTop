@@ -35,6 +35,21 @@ write_sdc ${DC_SDC}
 write_sdf ${DC_SDF}
 
 # ---------------------------------------------------------------- #
+# Deliverables
+
+# Collect the files required by the HW2 submission layout
+set OUT_DC [file join ${PROJECT_DIR} dc]
+file mkdir ${OUT_DC}
+
+file copy -force ${DC_NETLIST} ${OUT_DC}
+file copy -force ${DC_SDC}     ${OUT_DC}
+file copy -force ${DC_SDF}     ${OUT_DC}
+
+foreach RPT {report_qor.rpt report_timing.rpt report_area.rpt} {
+    file copy -force [file join ${STAGE_DIR} ${RPT}] ${OUT_DC}
+}
+
+# ---------------------------------------------------------------- #
 # Save
 
 # Save design database

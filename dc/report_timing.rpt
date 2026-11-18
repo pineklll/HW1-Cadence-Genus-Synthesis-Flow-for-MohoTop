@@ -1,0 +1,165 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : MohoTop
+Version: R-2020.09-SP5
+Date   : Wed Nov 18 15:20:57 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: 125CSS1P08   Library: M31GPSC900HL055PR_125CSS1P08_cworst_ccs
+Wire Load Model Mode: enclosed
+
+  Startpoint: topArea_soc/mticker_u/xticker_u/tickl_0_reg[0]
+              (rising edge-triggered flip-flop clocked by main_clk)
+  Endpoint: topArea_soc/mticker_u/xticker_u/tickh_0_reg[31]
+            (rising edge-triggered flip-flop clocked by main_clk)
+  Path Group: main_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MohoTop            MW0K                  M31GPSC900HL055PR_125CSS1P08_cworst_ccs
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock main_clk (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                       0.55       0.55
+  topArea_soc/mticker_u/xticker_u/tickl_0_reg[0]/CK (DFFRBQX1AR9)     0.08     0.00 #     0.55 r
+  topArea_soc/mticker_u/xticker_u/tickl_0_reg[0]/Q (DFFRBQX1AR9)     0.09     0.25     0.80 r
+  topArea_soc/mticker_u/xticker_u_io_ticklRd_0_data[0] (net)     4     0.00     0.80 r
+  U1213/O (NAND2X1AR9)                                    0.07      0.07       0.88 f
+  n1980 (net)                                   2                   0.00       0.88 f
+  U86/O (NOR2X1OAL9)                                      0.06      0.06       0.94 r
+  n1966 (net)                                   2                   0.00       0.94 r
+  U244/O (NAND2X1AL9)                                     0.05      0.05       0.99 f
+  n1935 (net)                                   2                   0.00       0.99 f
+  U158/O (NOR2X1AL9)                                      0.08      0.07       1.06 r
+  n1928 (net)                                   2                   0.00       1.06 r
+  U236/O (NAND2X1OAL9)                                    0.05      0.05       1.11 f
+  n1926 (net)                                   2                   0.00       1.11 f
+  U152/O (NOR2X2OAR9)                                     0.06      0.05       1.16 r
+  n1923 (net)                                   1                   0.00       1.16 r
+  U2581/CO (HAX1AR9)                                      0.06      0.10       1.25 r
+  n1921 (net)                                   1                   0.00       1.25 r
+  U309/CO (HAX1AR9)                                       0.06      0.10       1.35 r
+  n1919 (net)                                   1                   0.00       1.35 r
+  U2578/CO (HAX1AR9)                                      0.06      0.10       1.45 r
+  n1917 (net)                                   1                   0.00       1.45 r
+  U310/CO (HAX1AR9)                                       0.06      0.10       1.54 r
+  n1915 (net)                                   1                   0.00       1.54 r
+  U2575/CO (HAX1AR9)                                      0.06      0.10       1.64 r
+  n1913 (net)                                   1                   0.00       1.64 r
+  U361/CO (HAX1AR9)                                       0.06      0.10       1.74 r
+  n1911 (net)                                   1                   0.00       1.74 r
+  U2572/CO (HAX1AR9)                                      0.06      0.10       1.83 r
+  n1909 (net)                                   1                   0.00       1.83 r
+  U311/CO (HAX1AR9)                                       0.06      0.10       1.93 r
+  n1907 (net)                                   1                   0.00       1.93 r
+  U2569/CO (HAX1AR9)                                      0.06      0.10       2.03 r
+  n1905 (net)                                   1                   0.00       2.03 r
+  U312/CO (HAX1AR9)                                       0.06      0.10       2.13 r
+  n1903 (net)                                   1                   0.00       2.13 r
+  U2566/CO (HAX1AR9)                                      0.06      0.10       2.22 r
+  n1901 (net)                                   1                   0.00       2.22 r
+  U313/CO (HAX1AR9)                                       0.06      0.10       2.32 r
+  n1899 (net)                                   1                   0.00       2.32 r
+  U2563/CO (HAX1AR9)                                      0.06      0.10       2.42 r
+  n1989 (net)                                   1                   0.00       2.42 r
+  U359/CO (HAX1AR9)                                       0.06      0.10       2.51 r
+  n1897 (net)                                   1                   0.00       2.51 r
+  U2561/CO (HAX1AR9)                                      0.06      0.10       2.61 r
+  n1895 (net)                                   1                   0.00       2.61 r
+  U296/CO (HAX1AR9)                                       0.06      0.10       2.71 r
+  n1893 (net)                                   1                   0.00       2.71 r
+  U2558/CO (HAX1AR9)                                      0.06      0.10       2.81 r
+  n1891 (net)                                   1                   0.00       2.81 r
+  U297/CO (HAX1AR9)                                       0.06      0.10       2.90 r
+  n1888 (net)                                   1                   0.00       2.90 r
+  U2555/CO (HAX1AR9)                                      0.06      0.10       3.00 r
+  n1886 (net)                                   1                   0.00       3.00 r
+  U298/CO (HAX1AR9)                                       0.06      0.10       3.10 r
+  n1884 (net)                                   1                   0.00       3.10 r
+  U2552/CO (HAX1AR9)                                      0.06      0.10       3.19 r
+  n1882 (net)                                   1                   0.00       3.19 r
+  U299/CO (HAX1AR9)                                       0.06      0.10       3.29 r
+  n1880 (net)                                   1                   0.00       3.29 r
+  U2549/CO (HAX1AR9)                                      0.06      0.10       3.39 r
+  n1878 (net)                                   1                   0.00       3.39 r
+  U300/CO (HAX1AR9)                                       0.06      0.10       3.49 r
+  n1876 (net)                                   1                   0.00       3.49 r
+  U2546/CO (HAX1AR9)                                      0.06      0.10       3.58 r
+  n1874 (net)                                   1                   0.00       3.58 r
+  U301/CO (HAX1AR9)                                       0.06      0.10       3.68 r
+  n1872 (net)                                   1                   0.00       3.68 r
+  U2543/CO (HAX1AR9)                                      0.06      0.10       3.78 r
+  n1870 (net)                                   1                   0.00       3.78 r
+  U360/CO (HAX1AR9)                                       0.06      0.10       3.87 r
+  n1868 (net)                                   1                   0.00       3.87 r
+  U2540/CO (HAX1AR9)                                      0.06      0.10       3.97 r
+  n1866 (net)                                   1                   0.00       3.97 r
+  U302/CO (HAX1AR9)                                       0.06      0.10       4.07 r
+  n1864 (net)                                   1                   0.00       4.07 r
+  U2537/CO (HAX1AR9)                                      0.06      0.10       4.17 r
+  n1862 (net)                                   1                   0.00       4.17 r
+  U303/CO (HAX1AR9)                                       0.06      0.10       4.26 r
+  n1860 (net)                                   1                   0.00       4.26 r
+  U2534/CO (HAX1AR9)                                      0.06      0.10       4.36 r
+  n1858 (net)                                   1                   0.00       4.36 r
+  U304/CO (HAX1AR9)                                       0.06      0.10       4.46 r
+  n1856 (net)                                   1                   0.00       4.46 r
+  U2531/CO (HAX1AR9)                                      0.06      0.10       4.55 r
+  n1854 (net)                                   1                   0.00       4.55 r
+  U305/CO (HAX1AR9)                                       0.06      0.10       4.65 r
+  n1852 (net)                                   1                   0.00       4.65 r
+  U2528/CO (HAX1AR9)                                      0.06      0.10       4.75 r
+  n1850 (net)                                   1                   0.00       4.75 r
+  U306/CO (HAX1AR9)                                       0.06      0.10       4.85 r
+  n1848 (net)                                   1                   0.00       4.85 r
+  U2525/CO (HAX1AR9)                                      0.06      0.10       4.94 r
+  n1846 (net)                                   1                   0.00       4.94 r
+  U307/CO (HAX1AR9)                                       0.06      0.10       5.04 r
+  n1844 (net)                                   1                   0.00       5.04 r
+  U2522/CO (HAX1AR9)                                      0.06      0.10       5.14 r
+  n1842 (net)                                   1                   0.00       5.14 r
+  U308/CO (HAX1AR9)                                       0.06      0.10       5.23 r
+  n1840 (net)                                   1                   0.00       5.23 r
+  U2519/CO (HAX1AR9)                                      0.06      0.10       5.33 r
+  n1838 (net)                                   1                   0.00       5.33 r
+  U2517/CO (HAX1AR9)                                      0.04      0.09       5.42 r
+  n758 (net)                                    1                   0.00       5.42 r
+  U1216/O (XOR2X1AR9)                                     0.06      0.19       5.61 f
+  n926 (net)                                    1                   0.00       5.61 f
+  U1382/O (AO22X1AR9)                                     0.04      0.10       5.71 f
+  n2965 (net)                                   1                   0.00       5.71 f
+  topArea_soc/mticker_u/xticker_u/tickh_0_reg[31]/D (DFFRBQX1AR9)     0.04     0.00     5.71 f
+  data arrival time                                                            5.71
+
+  clock main_clk (rise edge)                                        6.67       6.67
+  clock network delay (ideal)                                       0.55       7.22
+  clock uncertainty                                                -0.50       6.72
+  topArea_soc/mticker_u/xticker_u/tickh_0_reg[31]/CK (DFFRBQX1AR9)     0.00     6.72 r
+  library setup time                                               -0.01       6.71
+  data required time                                                           6.71
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           6.71
+  data arrival time                                                           -5.71
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  1.00
+
+
+1
