@@ -31,3 +31,23 @@ proc c_sdc_modify_uncertainty {uncertainty_ts uncertainty_th clk_name} {
     set_clock_uncertainty -hold  ${uncertainty_th} [get_clocks ${clk_name}]
     set_interactive_constraint_modes {}
 }
+
+# ---------------------------------------------------------------- #
+# Synopsys
+
+# Return unique library-cell names matching wildcard patterns
+proc s_get_base_cell_names {patterns} {
+    set names [list]
+    foreach pattern ${patterns} {
+        foreach_in_collection cell [get_lib_cells */${pattern}] {
+            lappend names [get_object_name ${cell}]
+        }
+    }
+    return [lsort -unique ${names}]
+}
+
+# Update the clock uncertainty with stage-specific values
+proc s_sdc_modify_uncertainty {uncertainty_ts uncertainty_th clk_name} {
+    set_clock_uncertainty -setup ${uncertainty_ts} [get_clocks ${clk_name}]
+    set_clock_uncertainty -hold  ${uncertainty_th} [get_clocks ${clk_name}]
+}

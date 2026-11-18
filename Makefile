@@ -37,3 +37,4 @@ ${BUILD_DIR}:
 
 # Include flow makefiles
 include tool-genus.mk
+include tool-dc.mk
